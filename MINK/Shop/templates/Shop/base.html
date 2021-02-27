@@ -7,7 +7,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Mink</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
     <title>{% block title %} {% endblock %}</title>
         <style>
             {% block css %} {% endblock %}
@@ -15,8 +22,35 @@
 </head>
 <body>
 {% load static %}
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="/Shop">My Awesome Cart</a>
+<div class="jumbotron bg-cover text-white hr-align" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 100%), url('{%static 'Shop/Background.png'%}');min-height:35vh">
+        
+
+  <div>
+   
+    <a href="#home" title="Logo"> 
+      <img src='images/logo_transparent.png' class='resp-logo img-fluid mx-auto d-block' alt="MINK logo"  >
+      <!-- style="position:absolute;margin-top:-1rem;width:30%;height:30%; border-radius: 5px;" -->
+    </a> 
+ 
+  </div> 
+    
+    <div class="rc_nav" id="centered_nav">
+    <a href="#home"  title="Home">Home</a>
+    <a href="#services" title="Services">Shop for a Cause</a>
+    <a href="#about"  title="About">Government Schemes</a>
+    <a href="#contact"  title="Contact">Contact</a>
+    <a href="#contact"  title="Contact">Connect with NGOs</a>
+    <a href="#contact"  title="Contact">Contact Us</a>
+    <a href="javascript:void(0);" title="Menu" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!-- <hr> -->
+    
+    
+
+ 
+</div>
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/shop">My Awesome Cart</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,18 +58,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="/Shop">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="/Shop/about">About</a>
-            </li>
-
-            <li class="nav-item">
-            <a class="nav-link" href="/Shop/tracker">Tracker</a>
+            <a class="nav-link" href="/shop/about">About</a>
             </li>
 
             <li class="nav-item">
-            <a class="nav-link" href="/Shop/contact">Contact Us</a>
+            <a class="nav-link" href="/shop/tracker">Tracker</a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link" href="/shop/contact">Contact Us</a>
             </li>
 
 
@@ -52,7 +86,7 @@
         </button>
         
     </div>
-  </nav>
+  </nav> -->
 
   {% block body %} {% endblock %}
 
